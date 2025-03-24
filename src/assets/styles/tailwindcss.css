@@ -1,0 +1,202 @@
+@import "tailwindcss";
+@layer theme, base, components, utilities;
+
+
+@theme  {
+
+  --color-*: initial;
+  --color-aw: #dddddd ;
+
+  --color-n10: #F8F8F8 ;
+  --color-n20: #EAEAEA ;
+  --color-n30: #DFDEDE ;
+  --color-n40: #C8C8C8 ;
+  --color-n50: #AAAAAA ;
+  --color-n60: #848484 ;
+  --color-n70: #666666 ;
+  --color-n80: #3D3D3D ;
+  --color-n90: #212121 ;
+  --color-black: #000000 ;
+
+  --color-p50: #FFFCF8 ;
+  --color-p100: #FFF3DD ;
+  --color-p200: #FFDC99 ;
+  --color-p300: #FFCB66 ;
+  --color-p400: #FFBA33 ;
+  --color-p500: #FFA800 ;
+  --color-p600: #CC8700 ;
+  --color-p700: #996500 ;
+  --color-p800: #664300 ;
+  --color-p900: #332200 ;
+
+  --color-tp50: #FFF1F1 ;
+  --color-tp100: #FFD3D3 ;
+  --color-tp200: #FFDC99 ;
+  --color-tp300: #FFCB66 ;
+  --color-tp400: #FFBA33 ;
+  --color-tp500: #FFA800 ;
+  --color-tp600: #CC8700 ;
+  --color-tp700: #996500 ;
+  --color-tp800: #664300 ;
+  --color-tp900: #332200 ;
+
+  --color-s50: #F6F9FF ;
+  --color-s100: #edf2ff ;
+  --color-s200: #EAEAEA ;
+  --color-s300: #c6d6ff ;
+  --color-s400: 기존 값 유지 ;
+  --color-s500: #416ee6 ;
+  --color-s600: #3a62cc ;
+  --color-s700: #365cbf ;
+  --color-s800: #2b4999 ;
+  --color-s900: #203773 ;
+  --color-sDarker: #192b59 ;
+
+  --color-error: #ff3257 ;
+  --color-gray: #FAFAFC ;
+  --color-m-gray: #F9F9F9 ;
+  --color-d-black: #101010 ;
+  --color-white: #FFFFFF ;
+  --color-orange: #FFA800 ;
+
+
+
+
+  /* --color-*: initial;
+  --color-aw: '#dddddd';
+
+  --color-n10: '#F8F8F8';
+  --color-n20: '#EAEAEA';
+  --color-n30: '#DFDEDE';
+  --color-n40: '#C8C8C8';
+  --color-n50: '#AAAAAA';
+  --color-n60: '#848484';
+  --color-n70: '#666666';
+  --color-n80: '#3D3D3D';
+  --color-n90: '#212121';
+  --color-black: '#000000';
+
+  --color-p50: '#FFFCF8';
+  --color-p100: '#FFF3DD';
+  --color-p200: '#FFDC99';
+  --color-p300: '#FFCB66';
+  --color-p400: '#FFBA33';
+  --color-p500: '#FFA800';
+  --color-p600: '#CC8700';
+  --color-p700: '#996500';
+  --color-p800: '#664300';
+  --color-p900: '#332200';
+
+  --color-tp50: '#FFF1F1';
+  --color-tp100: '#FFD3D3';
+  --color-tp200: '#FFDC99';
+  --color-tp300: '#FFCB66';
+  --color-tp400: '#FFBA33';
+  --color-tp500: '#FFA800';
+  --color-tp600: '#CC8700';
+  --color-tp700: '#996500';
+  --color-tp800: '#664300';
+  --color-tp900: '#332200';
+
+  --color-s50: '#F6F9FF';
+  --color-s100: '#edf2ff';
+  --color-s200: '#EAEAEA';
+  --color-s300: '#c6d6ff';
+  --color-s400: oklch(61.81% 0.2053 265.27);
+  --color-s500: '#416ee6';
+  --color-s600: '#3a62cc';
+  --color-s700: '#365cbf';
+  --color-s800: '#2b4999';
+  --color-s900: '#203773';
+  --color-sDarker: '#192b59';
+
+  --color-error: '#ff3257';
+  --color-gray: '#FAFAFC';
+  --color-m-gray: '#F9F9F9';
+  --color-d-black: '#101010';
+  --color-white: '#FFFFFF';
+  --color-orange: '#FFA800'; */
+
+
+  --text-h1: 44px;
+  --text-h1--line-height: 44px; 
+  --text-h1--letter-spacing: 0px; 
+  --text-h1--font-weight: 500; 
+
+  --text-h2: 36px;
+  --text-h2--line-height: 36px; 
+  --text-h2--letter-spacing: 0px; 
+  --text-h2--font-weight: 500; 
+
+  --text-h3: 28px;
+  --text-h3--line-height: 34px; 
+  --text-h3--letter-spacing: 0px; 
+  --text-h3--font-weight: 500; 
+
+  --text-h4: 24px;  
+  --text-h4--line-height: 30px; 
+  --text-h4--letter-spacing: 0px; 
+  --text-h4--font-weight: 500; 
+
+  --text-h5: 20px;  
+  --text-h5--line-height: 26px; 
+  --text-h5--letter-spacing: 0px; 
+  --text-h5--font-weight: 500; 
+
+  --text-l1: 20px;  
+  --text-l1--letter-spacing: 0px; 
+  --text-l1--font-weight: 600; 
+
+  --text-l2: 20px;  
+  --text-l2--letter-spacing: 0px; 
+  --text-l2--font-weight: 400; 
+
+  --text-m1: 18px;  
+  --text-m1--letter-spacing: 0px; 
+  --text-m1--font-weight: 600; 
+
+  --text-m2: 18px;  
+  --text-m2--letter-spacing: 0px; 
+  --text-m2--font-weight: 400; 
+
+  --text-n1: 16px;  
+  --text-n1--letter-spacing: 0px; 
+  --text-n1--font-weight: 600; 
+
+  --text-n2: 16px;  
+  --text-n2--letter-spacing: 0px; 
+  --text-n2--font-weight: 400; 
+
+  --text-s1: 14px;  
+  --text-s1--letter-spacing: 0px; 
+  --text-s1--font-weight: 600; 
+
+  --text-s2: 14px;  
+  --text-s2--letter-spacing: 0px; 
+  --text-s2--font-weight: 400; 
+
+  --text-xsm: 13px;  
+  --text-xsm--letter-spacing: 0px; 
+  --text-xsm--font-weight: 400; 
+  --text-xsm--line-height: 13px;
+  
+  --text-xs1: 12px;  
+  --text-xs1--letter-spacing: 0px; 
+  --text-xs1--font-weight: 400; 
+  --text-xs1--line-height: 12px;
+
+  --text-xs2: 12px;  
+  --text-xs2--letter-spacing: 0px; 
+  --text-xs2--font-weight: 400; 
+  --text-xs2--line-height: 12px;
+
+
+
+  }
+
+
+
+@layer utilities {
+
+
+}
