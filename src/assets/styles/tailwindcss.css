@@ -57,81 +57,155 @@
   --color-orange: #ffa800;
   --color-black: #000000;
 
-  --text-h1: 44px;
-  --text-h1--line-height: 44px;
-  --text-h1--letter-spacing: 0px;
+  --text-h1: 10.628vw;
+  --text-h1--line-height: 10.628vw;
+  --text-h1--letter-spacing: 0;
   --text-h1--font-weight: 500;
 
-  --text-h2: 36px;
-  --text-h2--line-height: 36px;
-  --text-h2--letter-spacing: 0px;
+  --text-h2: 8.6957vw;
+  --text-h2--line-height: 8.6957vw;
+  --text-h2--letter-spacing: 0;
   --text-h2--font-weight: 500;
 
-  --text-h3: 28px;
-  --text-h3--line-height: 34px;
-  --text-h3--letter-spacing: 0px;
+  --text-h3: 6.7633vw;
+  --text-h3--line-height: 6.7633vw;
+  --text-h3--letter-spacing: 0;
   --text-h3--font-weight: 500;
 
-  --text-h4: 24px;
-  --text-h4--line-height: 30px;
-  --text-h4--letter-spacing: 0px;
+  --text-h4: 5.7971vw;
+  --text-h4--line-height: 7.2464vw;
+  --text-h4--letter-spacing: 0;
   --text-h4--font-weight: 500;
 
-  --text-h5: 20px;
-  --text-h5--line-height: 26px;
-  --text-h5--letter-spacing: 0px;
+  --text-h5: 4.8309vw;
+  --text-h5--line-height: 6.2802vw;
+  --text-h5--letter-spacing: 0;
   --text-h5--font-weight: 500;
 
-  --text-l1: 20px;
-  --text-l1--line-height: 26px;
-  --text-l1--letter-spacing: 0px;
+  --text-l1: 4.8309vw;
+  --text-l1--line-height: 6.2802vw;
+  --text-l1--letter-spacing: 0;
   --text-l1--font-weight: 500;
 
-  --text-l2: 20px;
-  --text-l2--line-height: 26px;
-  --text-l2--letter-spacing: 0px;
+  --text-l2: 4.8309vw;
+  --text-l2--line-height: 6.2802vw;
+  --text-l2--letter-spacing: 0;
   --text-l2--font-weight: 400;
 
-  --text-m1: 18px;
-  --text-m1--line-height: 26px;
-  --text-m1--letter-spacing: 0px;
+  --text-m1: 4.3478vw;
+  --text-m1--line-height: 6.2802vw;
+  --text-m1--letter-spacing: 0;
   --text-m1--font-weight: 500;
 
-  --text-m2: 18px;
-  --text-m2--line-height: 20px;
-  --text-m2--letter-spacing: 0px;
+  --text-m2: 4.3478vw;
+  --text-m2--line-height: 4.8309vw;
+  --text-m2--letter-spacing: 0;
   --text-m2--font-weight: 400;
 
-  --text-n1: 16px;
-  --text-n1--line-height: 24px;
-  --text-n1--letter-spacing: 0px;
+  --text-n1: 3.8647vw;
+  --text-n1--line-height: 5.7971vw;
+  --text-n1--letter-spacing: 0;
   --text-n1--font-weight: 500;
 
-  --text-n2: 16px;
-  --text-n2--line-height: 24px;
-  --text-n2--letter-spacing: 0px;
+  --text-n2: 3.8647vw;
+  --text-n2--line-height: 5.7971vw;
+  --text-n2--letter-spacing: 0;
   --text-n2--font-weight: 400;
 
-  --text-s1: 14px;
-  --text-s1--line-height: 20px;
-  --text-s1--letter-spacing: 0px;
+  --text-s1: 3.3816vw;
+  --text-s1--line-height: 4.8309vw;
+  --text-s1--letter-spacing: 0;
   --text-s1--font-weight: 500;
 
-  --text-s2: 14px;
-  --text-s2--line-height: 20px;
-  --text-s2--letter-spacing: 0px;
+  --text-s2: 3.3816vw;
+  --text-s2--line-height: 4.8309vw;
+  --text-s2--letter-spacing: 0;
   --text-s2--font-weight: 400;
 
-  --text-xs1: 13px;
+  --text-xs1: 3.1401vw;
   --text-xs1--line-height: auto;
-  --text-xs1--letter-spacing: 0px;
+  --text-xs1--letter-spacing: 0;
   --text-xs1--font-weight: 500;
 
-  --text-xs2: 12px;
-  --text-xs2--line-height: 18px;
-  --text-xs2--letter-spacing: 0px;
+  --text-xs2: 2.8986vw;
+  --text-xs2--line-height: 4.3478vw;
+  --text-xs2--letter-spacing: 0;
   --text-xs2--font-weight: 400;
 }
 
-@layer utilities {
+@layer components {
+  .flex-col-center {
+    @apply flex flex-col items-center justify-center;
+  }
+  .flex-col-center-between {
+    @apply flex flex-col items-center justify-between;
+  }
+  .flex-col-center-start {
+    @apply flex flex-col items-center justify-start;
+  }
+  .flex-col-end-start {
+    @apply flex flex-col items-end justify-start;
+  }
+  .flex-col-start-end {
+    @apply flex flex-col items-start justify-end;
+  }
+  .flex-col-start {
+    @apply flex flex-col items-start justify-center;
+  }
+  .flex-col-end {
+    @apply flex flex-col items-end justify-center;
+  }
+  .flex-col-start-start {
+    @apply flex flex-col items-start justify-start;
+  }
+  .flex-col-start-between {
+    @apply flex flex-col items-start justify-between;
+  }
+  .flex-col-center-end {
+    @apply flex flex-col items-center justify-end;
+  }
+  .flex-col-start-center {
+    @apply flex flex-col items-start justify-center;
+  }
+  .flex-row-center {
+    @apply flex flex-row items-center justify-center;
+  }
+  .flex-row-start {
+    @apply flex flex-row items-start justify-start;
+  }
+  .flex-row-center-between {
+    @apply flex flex-row items-center justify-between;
+  }
+  .flex-row-center-start {
+    @apply flex flex-row items-center justify-start;
+  }
+  .flex-row-center-end {
+    @apply flex flex-row items-center justify-end;
+  }
+  .flex-row-start-center {
+    @apply flex flex-row items-start justify-center;
+  }
+  .flex-row-start-between {
+    @apply flex flex-row items-start justify-between;
+  }
+  .flex-row-end-center {
+    @apply flex flex-row items-end justify-center;
+  }
+  .flex-row-end-end {
+    @apply flex flex-row items-end justify-end;
+  }
+  .flex-row-end-start {
+    @apply flex flex-row items-end justify-start;
+  }
+  .flex-row-start-end {
+    @apply flex flex-row items-start justify-end;
+  }
+}
+
+html,
+body {
+  min-width: 100dvw;
+  min-height: 100dvh;
+  width: 100dvw;
+  height: 100dvh;
 }
