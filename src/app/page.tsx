@@ -1,10 +1,11 @@
 'use client'
 
+import Section from '@/layouts/Section'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 export default function Home() {
-  const [count, setCount] = useState(0)
+  const [searchWord, setSearchWord] = useState('')
   const router = useRouter()
 
   const handleNavigation = (path: string) => {
@@ -21,50 +22,42 @@ export default function Home() {
     // }
   }
 
-  const a = [
-    { image: '', label: '전체' },
-    { image: '', label: '족발 · 보쌈' },
-    { image: '', label: '찜 · 탕' },
-    { image: '', label: '돈까스' },
-    { image: '', label: '회 · 해산물' },
-    { image: '', label: '고기' },
-    { image: '', label: '피자' },
-    { image: '', label: '한식' },
-    { image: '', label: '양식' },
-    { image: '', label: '중식' },
-    { image: '', label: '아시안' },
-    { image: '', label: '일식' },
-    { image: '', label: '버거' },
-    { image: '', label: '커피 · 차' },
-    { image: '', label: '디저트' },
-    { image: '', label: '죽' },
-    { image: '', label: '샌드위치' },
-    { image: '', label: '도시락' },
-    { image: '', label: '프렌차이즈' }
-  ]
   return (
-    <div className="bg-n20">
-      <div className={'flex flex-col gap-2'}>
-        <button onClick={() => handleNavigation('/test2')}>Go to Test2</button>{' '}
-        <button onClick={() => handleNavigation('/test')}>Go to Test</button>{' '}
-      </div>
-      <div
-        className={
-          'grid grid-cols-[repeat(auto-fill,minmax(14.9758vw,auto))] gap-[4.4686vw] p-[4.8309vw]'
-        }
-      >
-        {a.map((item) => (
+    <div className="bg-dark flex-col-center-start size-full gap-[20px] p-[20px]">
+      <div className={'text-h2 text-white'}>DUMDAM</div>
+
+      <Section className={'gap-[10px]'}>
+        <>
           <div
-            key={item.label}
             className={
-              'text-s2 grid h-[18.1159vw] grid-rows-[12.0773vw_4.8309vw] justify-center gap-[1.2077vw]'
+              'border-b-solid grid w-full grid-cols-[auto_1fr_auto] items-center justify-items-center gap-[10px] border-b-[1px] border-b-[#313334] pb-[10px] text-nowrap'
             }
           >
-            <div className={'bg-m-gray size-[12.0773vw] rounded-full'}></div>
-            <div className={'text-center'}>{item.label}</div>
+            <div className={'flex-1 text-white'}>검색어</div>
+            <div className={'flex-1'}>
+              <input
+                type="text"
+                className={'w-full'}
+                value={searchWord}
+                maxLength={10}
+                onChange={(e) => setSearchWord(e.target.value)}
+              />
+            </div>
+            <div className={''}>
+              <button className={'bg-s500 rounded-[8px] text-white'}>검색</button>
+            </div>
           </div>
-        ))}
-      </div>
+          <div className={'text-m2 text-white'}>최근 검색</div>
+          <div className={'w-full'}>
+            <div className={'flex-row-center-between w-full'}>
+              <div>카인</div>
+              <div>푸푸른 소나무</div>
+              <div>X</div>
+            </div>
+          </div>
+        </>
+      </Section>
+      <div className={'bg-dark10 flex-col-start w-full gap-[10px] rounded-[8px] p-[10px]'}></div>
     </div>
   )
 }

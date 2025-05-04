@@ -57,6 +57,11 @@
   --color-orange: #ffa800;
   --color-black: #000000;
 
+  --color-dark: #171717;
+  --color-dark10: #272829;
+
+  /*--------------------------------*/
+
   --text-h1: 10.628vw;
   --text-h1--line-height: 10.628vw;
   --text-h1--letter-spacing: 0;
