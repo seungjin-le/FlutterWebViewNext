@@ -1,11 +1,6 @@
 import useFetch from '@/utils/api'
-import { NextApiRequest } from 'next'
-import { NextResponse } from 'next/server'
-import { getCharacters } from './handler'
 
-// Start of Selection
-export async function GET(req: NextApiRequest) {
-  console.log(req)
+export const getCharacters = async () => {
   const query = new URLSearchParams({
     // characterName: '푸푸른소나무',
     characterName: '푸른소나',
@@ -16,10 +11,9 @@ export async function GET(req: NextApiRequest) {
     wordType: 'full',
     limit: '200'
   })
-  const response = await getCharacters()
+  const response = await useFetch(`servers/all/characters?${query.toString()}`)
   console.log('------------------------')
   console.log(response)
   console.log('------------------------')
-
-  return NextResponse.json(response)
+  return response
 }

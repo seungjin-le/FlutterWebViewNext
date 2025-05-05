@@ -1,7 +1,7 @@
 'use client'
 
 import Section from '@/layouts/Section'
-import useFetch from '@/utils/api'
+
 import { Search, X } from '@deemlol/next-icons'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
@@ -23,20 +23,6 @@ export default function Home() {
     //   console.log('Flutter 통신 오류:', e)
     // }
   }
-
-  const getData = async () => {
-    try {
-      const response = await fetch(`api/v1/characters`)
-      const data = await response.json()
-      console.log(data)
-    } catch (error) {
-      return null
-    }
-  }
-
-  useEffect(() => {
-    getData()
-  }, [])
 
   return (
     <div className="bg-dark flex-col-center-start size-full gap-[20px] p-[20px]">

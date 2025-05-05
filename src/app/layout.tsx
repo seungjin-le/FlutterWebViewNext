@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import '@/assets/styles/tailwindcss.css'
 import { ReactNode } from 'react'
+import Providers from '@/providers/Provider'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`bg-dark size-full`}>{children}</body>
+      <body className={`bg-dark size-full`}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }
