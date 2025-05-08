@@ -41,7 +41,7 @@ export default function Home() {
         <div className={'text-m2 text-white'}>최근 검색</div>
         <div className={'flex-col-start w-full gap-[10px] text-white'}>
           <div className={'flex-row-center-between w-full'}>
-            <div>카인</div>
+            <div>Server</div>
             <div>푸푸른 소나무</div>
             <X size={24} color="#FFFFFF" />
           </div>
