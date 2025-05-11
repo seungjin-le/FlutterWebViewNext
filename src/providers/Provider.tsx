@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { isServer, QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import PageTransition from './PageTransition'
 
 const makeQueryClient = () => {
   return new QueryClient({
@@ -38,9 +37,5 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   // 버리기 때문입니다.
   const queryClient = getQueryClient()
 
-  return (
-    <QueryClientProvider client={queryClient}>
-      <PageTransition>{children}</PageTransition>
-    </QueryClientProvider>
-  )
+  return <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
 }
