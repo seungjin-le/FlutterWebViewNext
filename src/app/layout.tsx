@@ -16,9 +16,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={`bg-dark size-full`}>
-        <Providers>
-          <PageTransition>{children}</PageTransition>
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

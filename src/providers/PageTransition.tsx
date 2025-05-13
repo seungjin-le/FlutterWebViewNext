@@ -1,8 +1,9 @@
 'use client'
 
-import { AnimatePresence, motion, Variants } from 'framer-motion'
+import { animate, AnimatePresence, motion, Variants } from 'framer-motion'
+import { TransitionRouter } from 'next-transition-router'
 import { usePathname } from 'next/navigation'
-import { ReactNode } from 'react'
+import { ReactNode, useRef } from 'react'
 
 interface PageTransitionProps {
   children: ReactNode
@@ -16,11 +17,18 @@ const variants: Variants = {
 
 export default function PageTransition({ children }: PageTransitionProps) {
   const path: string = usePathname()
+  const wrapperRef = useRef<HTMLDivElement>(null!)
   return (
-    <AnimatePresence mode="wait">
-      <motion.div key={path} initial="initial" animate="animate" exit="exit" variants={variants} className="flex flex-1 flex-col">
-        {children}
-      </motion.div>
-    </AnimatePresence>
+    <TransitionRouter
+      auto
+      leave={(next) => {
+        animate(wrapperRef.current, { opacity: [1, 0] }, { duration: 0.5, onComplete: next })
+      }}
+      enter={(next) => {
+        animate(wrapperRef.current, { opacity: [0, 1] }, { duration: 0.5, onComplete: next })
+      }}
+    >
+      <div ref={wrapperRef}>{children}</div>
+    </TransitionRouter>
   )
 }
