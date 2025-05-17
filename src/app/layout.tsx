@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import '@/assets/styles/tailwindcss.css'
+import '@/public/assets/styles/tailwindcss.css'
 import { ReactNode } from 'react'
 import Providers from '@/providers/Provider'
 import PageTransition from '@/providers/PageTransition'
