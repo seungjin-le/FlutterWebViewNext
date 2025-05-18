@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 
 interface SectionProps {
-  children: ReactNode | ReactNode[]
+  children?: ReactNode | ReactNode[]
   className?: string
 }
 
