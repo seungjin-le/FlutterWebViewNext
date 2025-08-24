@@ -49,7 +49,7 @@ export default function Home() {
       </Section>
       {/* https://img-api.neople.co.kr/df/servers/<serverId>/characters/<characterId>?zoom=<zoom> */}
       {/* https://img-api.neople.co.kr/df/servers/diregie/characters/56773d74cc3bfa8a61ff4e69757e3360?zoom=1 */}
-      <img src="https://img-api.neople.co.kr/df/servers/diregie/characters/56773d74cc3bfa8a61ff4e69757e3360?zoom=3" alt="" />
+      {/* <img src="https://img-api.neople.co.kr/df/servers/diregie/characters/56773d74cc3bfa8a61ff4e69757e3360?zoom=3" alt="" /> */}
       <Section>
         <div className={'flex-row-center-between border-b-solid w-full border-b-[1px] border-b-[#313334] pb-[10px]'}>
           <div>오늘의 등급</div>
