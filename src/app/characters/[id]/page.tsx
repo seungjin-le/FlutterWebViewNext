@@ -30,7 +30,7 @@ export default async function Character({ params }: CharacterProps) {
   const { data } = await serverSideProps()
   console.log(id)
   return (
-    <div>
+    <div className={'size-full'}>
       Character {id}
       {data?.characterId && data?.serverId && <img src={`https://img-api.neople.co.kr/df/servers/${data.serverId}/characters/${data.characterId}?zoom=3`} alt="" />}
     </div>
