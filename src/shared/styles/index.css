@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-@layer theme, base, components, utilities;
 
 @theme {
   --color-*: initial;
@@ -145,69 +144,70 @@ body {
   width: 100dvw;
   height: 100dvh;
 }
-@utility .flex-col-center {
-  @layer flex flex-col items-center justify-center;
+
+.flex-col-center {
+  @apply flex flex-col items-center justify-center;
 }
-@utility .flex-col-center-between {
-  @layer flex flex-col items-center justify-between;
+.flex-col-center-between {
+  @apply flex flex-col items-center justify-between;
 }
-@utility .flex-col-center-start {
-  @layer flex flex-col items-center justify-start;
+.flex-col-center-start {
+  @apply flex flex-col items-center justify-start;
 }
-@utility .flex-col-end-start {
-  @layer flex flex-col items-end justify-start;
+.flex-col-end-start {
+  @apply flex flex-col items-end justify-start;
 }
-@utility .flex-col-start-end {
-  @layer flex flex-col items-start justify-end;
+.flex-col-start-end {
+  @apply flex flex-col items-start justify-end;
 }
-@utility .flex-col-start {
-  @layer flex flex-col items-start justify-center;
+.flex-col-start {
+  @apply flex flex-col items-start justify-center;
 }
-@utility .flex-col-end {
-  @layer flex flex-col items-end justify-center;
+.flex-col-end {
+  @apply flex flex-col items-end justify-center;
 }
-@utility .flex-col-start-start {
-  @layer flex flex-col items-start justify-start;
+.flex-col-start-start {
+  @apply flex flex-col items-start justify-start;
 }
-@utility .flex-col-start-between {
-  @layer flex flex-col items-start justify-between;
+.flex-col-start-between {
+  @apply flex flex-col items-start justify-between;
 }
-@utility .flex-col-center-end {
-  @layer flex flex-col items-center justify-end;
+.flex-col-center-end {
+  @apply flex flex-col items-center justify-end;
 }
-@utility .flex-col-start-center {
-  @layer flex flex-col items-start justify-center;
+.flex-col-start-center {
+  @apply flex flex-col items-start justify-center;
 }
-@utility .flex-row-center {
-  @layer flex flex-row items-center justify-center;
+.flex-row-center {
+  @apply flex flex-row items-center justify-center;
 }
-@utility .flex-row-start {
-  @layer flex flex-row items-start justify-start;
+.flex-row-start {
+  @apply flex flex-row items-start justify-start;
 }
-@utility .flex-row-center-between {
-  @layer flex flex-row items-center justify-between;
+.flex-row-center-between {
+  @apply flex flex-row items-center justify-between;
 }
-@utility .flex-row-center-start {
-  @layer flex flex-row items-center justify-start;
+.flex-row-center-start {
+  @apply flex flex-row items-center justify-start;
 }
-@utility .flex-row-center-end {
-  @layer flex flex-row items-center justify-end;
+.flex-row-center-end {
+  @apply flex flex-row items-center justify-end;
 }
-@utility .flex-row-start-center {
-  @layer flex flex-row items-start justify-center;
+.flex-row-start-center {
+  @apply flex flex-row items-start justify-center;
 }
-@utility .flex-row-start-between {
-  @layer flex flex-row items-start justify-between;
+.flex-row-start-between {
+  @apply flex flex-row items-start justify-between;
 }
-@utility .flex-row-end-center {
-  @layer flex flex-row items-end justify-center;
+.flex-row-end-center {
+  @apply flex flex-row items-end justify-center;
 }
-@utility .flex-row-end-end {
-  @layer flex flex-row items-end justify-end;
+.flex-row-end-end {
+  @apply flex flex-row items-end justify-end;
 }
-@utility .flex-row-end-start {
-  @layer flex flex-row items-end justify-start;
+.flex-row-end-start {
+  @apply flex flex-row items-end justify-start;
 }
-@utility .flex-row-start-end {
-  @layer flex flex-row items-start justify-end;
+.flex-row-start-end {
+  @apply flex flex-row items-start justify-end;
 }

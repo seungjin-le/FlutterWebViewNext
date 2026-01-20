@@ -11,11 +11,19 @@ export async function GET(req: NextApiRequest) {
     characterName: '푸른소나',
     apikey: process.env.API_KEY || '',
     jobId: '',
+
+
+
+
     jobGrowId: '',
     isAllJobGrow: 'false',
     wordType: 'full',
     limit: '200'
   })
+
+
+
+
   const response = await getCharacters()
   console.log('------------------------')
   console.log(response)

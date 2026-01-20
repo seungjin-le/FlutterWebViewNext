@@ -13,8 +13,13 @@ export default async function Characters() {
 
   return (
     <div>
+
+
+
+
+
       Characters
-      {data.toString()}
+      { data.toString() }
     </div>
   )
 }

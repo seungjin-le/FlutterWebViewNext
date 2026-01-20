@@ -1,7 +1,6 @@
 'use client'
 
 import Section from '@/layouts/Section'
-
 import { Search, X } from '@deemlol/next-icons'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
@@ -15,6 +14,7 @@ export default function Home() {
     router.push(path)
 
     // Flutter와 통신 추가 (선택 사항)
+
     // try {
     //   if (window.flutter_inappwebview) {
     //     window.flutter_inappwebview.callHandler('onRouteChange', path)
@@ -27,7 +27,6 @@ export default function Home() {
   return (
     <div className="bg-dark flex-col-center-start size-full gap-[20px] p-[20px]">
       <div className={'text-h2 text-white'}>DUMDAM</div>
-
       <Section className={'gap-[10px]'}>
         <div
           className={'border-b-solid grid w-full grid-cols-[auto_1fr_auto] items-center justify-items-center gap-[10px] border-b-[1px] border-b-[#313334] pb-[10px] text-nowrap'}
