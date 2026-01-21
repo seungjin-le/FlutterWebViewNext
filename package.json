@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "story": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@deemlol/next-icons": "^0.1.9",
@@ -27,6 +29,9 @@
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.1.18",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "storybook": "^10.1.11",
+    "@storybook/nextjs-vite": "^10.1.11",
+    "vite": "^7.3.1"
   }
 }
