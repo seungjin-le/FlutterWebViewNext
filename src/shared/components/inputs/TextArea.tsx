@@ -3,7 +3,7 @@ import { ChangeEvent, forwardRef, ReactNode, TextareaHTMLAttributes } from 'reac
 import { Control, Controller } from 'react-hook-form'
 import { InputErrorMsg } from '../items'
 
-interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   label?: string
   error?: string
   helperText?: string
@@ -17,7 +17,7 @@ interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   cols?: number
 }
 
-export const TextArea = forwardRef<HTMLTextAreaElement, TextareaProps>(
+export const TextArea = forwardRef<HTMLTextAreaElement, Props>(
   ({ label, error, helperText, className, disabled, rows = 4, cols = 5, control, name, maxLength, maxLengthType, suffix, ...props }, ref) => {
     return (
       <Controller
