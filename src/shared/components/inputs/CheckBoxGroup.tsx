@@ -1,5 +1,5 @@
 import { Control, Controller } from 'react-hook-form'
-import { SelectOption } from '@/shared/types/default'
+import { SelectOption } from '@/common/types/default'
 import cn from '@/utils/tailwindMergeConfig'
 import { CheckBox } from './CheckBox'
 

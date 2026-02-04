@@ -3,7 +3,7 @@ import { Control, Controller } from 'react-hook-form'
 import { RadioBox } from './RadioBox'
 import { InputErrorMsg } from '../items'
 import { ChangeEvent } from 'react'
-import { SelectOption } from '@/shared/types/default'
+import { SelectOption } from '@/common/types/default'
 
 interface Props {
   control: Control<any>

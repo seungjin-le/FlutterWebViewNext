@@ -3,7 +3,7 @@ import { useOutsideClick } from '@/common/hooks/useOutsideClick'
 import { useRef, useState } from 'react'
 import { Control, Controller } from 'react-hook-form'
 import { InputErrorMsg } from '../items'
-import { SelectOption } from '@/shared/types/default'
+import { SelectOption } from '@/common/types/default'
 import cn from '@/utils/tailwindMergeConfig'
 
 interface Props {

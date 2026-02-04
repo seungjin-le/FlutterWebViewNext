@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { errorMsgAnimate } from '@/shared/enum/animate'
+import { errorMsgAnimate } from '@/common/enum/animate'
 import { cn } from '@/lib/utils'
 
 export const InputErrorMsg = ({ error, className }: { error?: string | boolean; className?: string }) => {
