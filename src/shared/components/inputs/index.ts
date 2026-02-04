@@ -1,3 +1,5 @@
 export { TextArea } from './TextArea'
 export { default as TextInput } from './TextInput'
 export { DropDown } from './DropDown'
+export { CheckBoxGroup } from './CheckBoxGroup'
+export { CheckBox } from './CheckBox'
