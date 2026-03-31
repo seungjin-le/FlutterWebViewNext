@@ -1,4 +1,4 @@
-import { easeInOut } from 'motion/react'
+import { easeInOut } from 'framer-motion'
 
 export const opacityAnimate = {
   initial: { opacity: 0 },

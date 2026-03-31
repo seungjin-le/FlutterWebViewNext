@@ -141,7 +141,7 @@ export function useInfiniteScroll(
     rootMargin?: string
     enabled?: boolean
   } = {},
-): RefObject<HTMLDivElement> {
+): RefObject<HTMLDivElement | null> {
   const observerRef = useRef<HTMLDivElement>(null)
   const { threshold = 0.1, rootMargin = '100px', enabled = true } = options
 

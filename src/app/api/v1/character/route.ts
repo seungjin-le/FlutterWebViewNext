@@ -1,13 +1,7 @@
-import { NextApiRequest } from 'next'
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { getCharacter } from './handler'
 
-// Start of Selection
-export async function GET(req: NextApiRequest) {
+export async function GET(req: NextRequest) {
   const response = await getCharacter()
-  console.log('------------------------')
-  console.log(response)
-  console.log('------------------------')
-
   return NextResponse.json(response)
 }
