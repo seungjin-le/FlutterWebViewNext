@@ -36,7 +36,7 @@ export const RadioGroup = ({ control, name, error, value, options, className, di
           <div className={'flex-col-start-center'}>
             <div className={cn('flex gap-5', className)}>
               {options.map((opt) => (
-                <FormRadioBox
+                <RadioBox
                   key={opt.value}
                   value={opt.value}
                   label={opt.label}

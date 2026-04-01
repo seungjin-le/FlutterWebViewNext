@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { isServer, QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { FlutterBridgeEffects, FlutterBridgeProvider } from '@/shared/flutter'
 import PageTransition from './PageTransition'
 
 const makeQueryClient = () => {
@@ -29,7 +30,10 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   const queryClient = getQueryClient()
   return (
     <QueryClientProvider client={queryClient}>
-      <PageTransition>{children}</PageTransition>
+      <FlutterBridgeProvider>
+        <FlutterBridgeEffects />
+        <PageTransition>{children}</PageTransition>
+      </FlutterBridgeProvider>
     </QueryClientProvider>
   )
 }
