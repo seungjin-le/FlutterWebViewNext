@@ -1,12 +1,12 @@
 'use client'
 
-import Navigation from './portfolio/components/Navigation'
-import Hero from './portfolio/components/Hero'
-import About from './portfolio/components/About'
-import Skills from './portfolio/components/Skills'
-import Projects from './portfolio/components/Projects'
-import Contact from './portfolio/components/Contact'
-import Footer from './portfolio/components/Footer'
+import Navigation from '@/shared/components/portfolio/Navigation'
+import Hero from '@/shared/components/portfolio/Hero'
+import About from '@/shared/components/portfolio/About'
+import Skills from '@/shared/components/portfolio/Skills'
+import Projects from '@/shared/components/portfolio/Projects'
+import Contact from '@/shared/components/portfolio/Contact'
+import Footer from '@/shared/components/portfolio/Footer'
 
 export default function Home() {
   return (
