@@ -21,7 +21,7 @@ export const TextArea = forwardRef<HTMLTextAreaElement, Props>(
   ({ label, error, helperText, className, disabled, rows = 4, cols = 5, control, name, maxLength, maxLengthType, suffix, ...props }, ref) => {
     return (
       <Controller
-        name={name}
+        name={name}   
         control={control}
         render={({ field, fieldState }) => {
           const err = fieldState.error?.message || error || ''

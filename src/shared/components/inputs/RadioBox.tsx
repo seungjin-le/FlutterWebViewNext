@@ -19,7 +19,7 @@ export const RadioBox = ({ label, error, name, checked, onChange, value, disable
         id={`radioBox_${name}_${value}`}
         value={value}
         checked={checked}
-        onChange={onChange}
+        onChange={onChange} 
         disabled={disabled || checked}
         className={cn(
           'size-4 bg-contain bg-center bg-no-repeat transition-all focus:outline-none',

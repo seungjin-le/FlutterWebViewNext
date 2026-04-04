@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     description: '사용자 경험을 최우선으로 하는 풀스택 개발자 포트폴리오',
     type: 'website'
   }
-}
+}   
 
 export default function RootLayout({
-  children
+  children 
 }: Readonly<{
   children: ReactNode
 }>) {
