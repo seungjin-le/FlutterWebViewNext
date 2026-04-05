@@ -1,20 +1,8 @@
 'use client'
 
-import React, {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useRef,
-  useState
-} from 'react'
+import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import type { FlutterBridgeContextValue, FlutterToWebMessage } from './types'
-import {
-  isFlutterWebViewRuntime,
-  parseFlutterToWebMessage,
-  sendToFlutter
-} from './flutterBridge'
+import { isFlutterWebViewRuntime, parseFlutterToWebMessage, sendToFlutter } from './flutterBridge'
 
 const FlutterBridgeContext = createContext<FlutterBridgeContextValue | null>(null)
 
@@ -66,9 +54,7 @@ export function FlutterBridgeProvider({ children }: { children: React.ReactNode 
     [isFlutter, send, subscribe]
   )
 
-  return (
-    <FlutterBridgeContext.Provider value={value}>{children}</FlutterBridgeContext.Provider>
-  )
+  return <FlutterBridgeContext.Provider value={value}>{children}</FlutterBridgeContext.Provider>
 }
 
 export function useFlutterBridgeContext(): FlutterBridgeContextValue {

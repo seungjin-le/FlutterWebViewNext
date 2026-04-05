@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import { useFlutterBridgeContext } from './flutterBridgeProvider'
+import { useFlutterBridgeContext } from './FlutterBridgeProvider'
 import type { FlutterToWebMessage, WebToFlutterMessage } from './types'
 
 /**
